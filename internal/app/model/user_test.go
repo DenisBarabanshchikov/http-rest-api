@@ -71,8 +71,8 @@ func TestUser_Validate(t *testing.T) {
 		t.Run(tc.name, func(t *testing.T) {
 			if tc.isValid {
 				assert.NoError(t, tc.u().Validate())
- 			} else {
- 				assert.Error(t, tc.u().Validate())
+			} else {
+				assert.Error(t, tc.u().Validate())
 			}
 		})
 	}
